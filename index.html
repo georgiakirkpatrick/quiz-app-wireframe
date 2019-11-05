@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>What Are You Wearing?</title>
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel = "stylesheet" href = "main.css">
+</head>
+
+<body>
+
+    <!-- Start Page: this is what the user sees when they first navigate to the app -->
+    <header>
+        <section class = "quiz-title">
+            <h1> What Are You Wearing? </h1>
+        </section> 
+    </header>
+
+    <main>
+        <section class = "start-background">
+            <section class = "start-page">
+                <h3> How much do you know about the fiber in your clothes?</h3>
+                <p>Test your knowledge with this ten-question quiz.</p>
+                <button type="button" class="start-button">Start</button>
+            </section>
+        </section>
+
+    <!-- Question Page: these are the quiz questions the user navigates through -->
+        <header>
+            <section class = "quiz-title">
+                <h1> What Are You Wearing? </h1>
+            </section> 
+        </header>    
+        <section class = "question-and-answer">
+            
+            <section class = "score-keeper">
+                    <ul>
+                        <li>Question: <span>  1  </span>  of  10</li>
+                        <li>Score: <span">  0</span></li>
+                    </ul>
+            </section>
+
+            <section class = "question">
+                <form>
+                    <fieldset>
+                        <legend class="question-string" required>Modal, lyocell, tencel, acetate, and viscose are all variants of which cellulose-based fiber developed in 
+                                France in the 1890s?</legend>
+
+                        <label for="1"><span>Spandex</span></label>
+                        <input type="radio" id="1" name="option" value="Spandex" required><br><br>
+
+                        <label for="1"><span>Polyester</span></label>
+                        <input type="radio" id="1" name="option" value="Polyester" required><br><br>
+
+                        <label for="1"><span>Nylon</span></label>
+                        <input type="radio" id="1" name="option" value="Nylon" required><br><br>
+
+                        <label for="1"><span>Rayon</span></label>
+                        <input type="radio" id="1" name="option" value="Rayon" required><br><br>
+
+                        <button type="button" class="js-submit-button"> Submit </button>
+                    </fieldset>
+                </form>
+            </section>
+
+        </section>    
+
+    <!-- Answer Page: these are the answers the user navigates through -->
+        <header>
+            <section class = "quiz-title">
+                <h1> What Are You Wearing? </h1>
+            </section> 
+        </header>    
+        <section class = "question-and-answer">
+            
+            <section class = "score-keeper">
+                    <ul>
+                        <li>Question: <span>  1  </span>  of  10</li>
+                        <li>Score: <span>  1</span></li>
+                    </ul>
+            </section>
+
+            <section class = "answer">
+                <p class = "one-word-answer"> Nope.</p>
+                <p>Rayon, modal, lyocell, tencel, acetate, and viscose are all considered semi-synthetic fibers. While they 
+                are made with natural plant materials such as wood pulp, their production involves harmful chemicals like carbon disulfide.</p>
+                <p>
+                    <img src = "images/rayon-factory.jpg" alt = "Rayon factory.">
+                </p>
+                <button type="button"> Next </button>
+            </section>
+
+        </section>
+        
+        <!-- End Page     -->
+        <header>
+            <section class = "quiz-title">
+                <h1> What Are You Wearing? </h1>
+            </section> 
+        </header>
+
+        <section class = "end">
+            <h3>Your Score</h3>
+            <p>7 / 10</p>
+            <p>Want to retake the quiz?  Click 'restart' to get started'.</p>
+            <button type="button" class="button"> Retake </button>
+        </section>
+    </main>
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
